@@ -1,9 +1,7 @@
 class HomeController < ApplicationController
   def index
     if request.post?
-      if params[:message] != nil
-        @data = "ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!"
-      end
+      @data = "ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!" if params[:message]
     end
   end
 end
