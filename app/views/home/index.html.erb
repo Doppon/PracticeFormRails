@@ -1,15 +1,15 @@
 <h2>form_tagの練習</h2>
 
 <div class="l-container l-container-slim">
-    <%= form_tag index_path do |f| %>
-      <div> 
-        <p>テキストフィールド</p>
-        <%= text_area_tag :message %>
-      </div>
+  <%= form_tag index_path do |f| %>
+    <div> 
+      <p>テキストフィールド</p>
+      <%= text_area_tag :message %>
+    </div>
 
-      <div>
-        <%= submit_tag '送信する' %>
-      </div>
-    <% end %>
-    <p>注目((*｀艸´)ｳｼｼｼ)→<%= @data %></p>
-  </div>
+    <div>
+      <%= submit_tag '送信する' %>
+    </div>
+  <% end %>
+  <p>注目((*｀艸´)ｳｼｼｼ)→<%= @data %></p>
+</div>
